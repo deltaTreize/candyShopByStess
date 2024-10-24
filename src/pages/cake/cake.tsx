@@ -36,6 +36,9 @@ export function Cake() {
     if (forme === 5) {
       return {src: "./assets/circle.png", alt: "cercle"};
     }
+    if (forme === 6) {
+      return {src: "./assets/cone.png", alt: "cone"};
+    }
     return {src: "", alt: ""};
   }
 
@@ -85,6 +88,12 @@ export function Cake() {
 							alt="cercle"
 							onClick={() => handleForme(5)}
 							className={`${forme === 5 ? "active" : ""}`}
+						/>
+						<img
+							src="./assets/cone.png"
+							alt="cone"
+							onClick={() => handleForme(6)}
+							className={`${forme === 6 ? "active" : ""}`}
 						/>
 					</div>
 					<button
