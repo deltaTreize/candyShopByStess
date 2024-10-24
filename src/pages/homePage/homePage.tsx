@@ -1,0 +1,25 @@
+import React from "react";
+import { NavLink } from "react-router-dom";
+import "./homePage.scss";
+
+export function HomePage() {
+	return (
+		<div className="homePage">
+			<NavLink to="/gateaux" className="homePage-link gateau">
+				<p>Les Gateaux sur mesure</p>
+			</NavLink>
+			<NavLink to="/boites" className="homePage-link boite">
+				<p>Les Boites</p>
+			</NavLink>
+			<NavLink to="/goblets" className="homePage-link smoothies">
+				<p>Les Goblets</p>
+			</NavLink>
+			<NavLink to="/cornets" className="homePage-link cornets">
+				<p>Les Cornets</p>
+			</NavLink>
+			<NavLink to="/brochettes" className="homePage-link brochette">
+				<p>Les Brochettes</p>
+			</NavLink>
+		</div>
+	);
+}
