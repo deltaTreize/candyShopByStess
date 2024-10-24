@@ -1,4 +1,6 @@
 import React, { useState } from "react";
+import {SimpleContainer} from "../../components/simple-container/simple-container";
+import {EtagesContainer} from "../../components/etages-container/etages-container";
 import "./cake.scss";
 
 export function Cake() {
@@ -6,7 +8,7 @@ export function Cake() {
 	const [forme, setForme] = useState<number>(0);
 	if (show > 4) {
 		setShow(1);
-    setForme(0);
+		setForme(0);
 	}
 
 	const handleForme = (num: number) => {
@@ -17,48 +19,53 @@ export function Cake() {
 		setShow(show + 1);
 	};
 
-  const handleShowImg = () => {
-    if (forme === 0) {
-      return {src: "", alt: ""};
-    }
-    if (forme === 1) {
-      return {src: "./assets/heart.png", alt: "coeur"};
-    }
-    if (forme === 2) {
-      return {src: "./assets/square.png", alt: "carré"};
-    }
-    if (forme === 3) {
-      return {src: "./assets/star.png", alt: "étoile"};
-    }
-    if (forme === 4) {
-      return {src: "./assets/triangle.png", alt: "triangle"};
-    }
-    if (forme === 5) {
-      return {src: "./assets/circle.png", alt: "cercle"};
-    }
-    if (forme === 6) {
-      return {src: "./assets/cone.png", alt: "cone"};
-    }
-    return {src: "", alt: ""};
-  }
+	const handleShowImg = () => {
+		if (forme === 0) {
+			return { src: "", alt: "" };
+		}
+		if (forme === 1) {
+			return { src: "./assets/heart.png", alt: "coeur" };
+		}
+		if (forme === 2) {
+			return { src: "./assets/square.png", alt: "carré" };
+		}
+		if (forme === 3) {
+			return { src: "./assets/star.png", alt: "étoile" };
+		}
+		if (forme === 4) {
+			return { src: "./assets/triangle.png", alt: "triangle" };
+		}
+		if (forme === 5) {
+			return { src: "./assets/circle.png", alt: "cercle" };
+		}
+		if (forme === 6) {
+			return { src: "./assets/cone.png", alt: "cone" };
+		}
+		return { src: "", alt: "" };
+	};
 
-  const {src, alt} = handleShowImg();
+	const { src, alt } = handleShowImg();
 
 	return (
 		<div className="cake">
 			<div className="cake-show">
 				<div className="show1">
-          <p>Forme</p>
-          <img src={src} alt={alt} />
-          </div>
-				<div className="show2">Taille</div>
+					<p>Forme</p>
+					<img src={src} alt={alt} />
+				</div>
+				<div className="show2">
+					<p>Taille</p>
+				</div>
 				<div className="show3">Habillage</div>
 				<div className="show4">Remplissage</div>
 			</div>
 			<div className="cake-container">
 				<div className={`etape1 ${show === 1 ? "show" : ""}`}>
 					<p>Forme</p>
-					<div id="forme-images" className={`images ${show === 1 ? "show" : ""}`}>
+					<div
+						id="forme-images"
+						className={`images ${show === 1 ? "show" : ""}`}
+					>
 						<img
 							src="./assets/heart.png"
 							alt="coeur"
@@ -106,6 +113,10 @@ export function Cake() {
 				</div>
 				<div className={`etape2 ${show === 2 ? "show" : ""}`}>
 					<p>Taille</p>
+					<div className="taille-container">
+            <SimpleContainer />
+            <EtagesContainer />
+					</div>
 					<button
 						type="button"
 						className={`${show === 2 ? "buttonShow" : "buttonHidden"}`}
