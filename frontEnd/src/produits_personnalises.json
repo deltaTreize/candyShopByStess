@@ -1,0 +1,235 @@
+{
+    "produits": [
+        {
+            "id": 1,
+            "nom": "Dragibus Soft",
+            "photo": "https://images.openfoodfacts.org/images/products/310/322/004/8658/front_en.39.400.jpg",
+            "categorie": "Snacks, Snacks sucrés, Confiseries, Bonbons, Bonbons gélifiés, Surgelés",
+            "marque": "Haribo",
+            "mots_cles": [
+                "fr:triman"
+            ]
+        },
+        {
+            "id": 2,
+            "nom": "Chamallow",
+            "photo": "https://images.openfoodfacts.org/images/products/310/322/004/6159/front_en.74.400.jpg",
+            "categorie": "Snacks, Sweet snacks, Confectioneries, Candies, Marshmallows",
+            "marque": "Haribo",
+            "mots_cles": [
+                "en:no-gluten",
+                "en:no-colorings"
+            ]
+        },
+        {
+            "id": 3,
+            "nom": "Croco",
+            "photo": "https://images.openfoodfacts.org/images/products/310/322/003/5214/front_en.98.400.jpg",
+            "categorie": "Snacks, Sweet snacks, Confectioneries, Candies, Gummi candies, Gummy crocodiles",
+            "marque": "Haribo",
+            "mots_cles": [
+                "en:green-dot",
+                "en:natural-colorings"
+            ]
+        },
+        {
+            "id": 4,
+            "nom": "Nom non disponible",
+            "photo": "https://images.openfoodfacts.org/images/products/400/990/045/5299/front_en.13.400.jpg",
+            "categorie": "Snacks,Zoete snacks,Zoetwaren,Snoep,fr:Bonbons dragéifiés",
+            "marque": "Skittles",
+            "mots_cles": [
+                "en:vegetarian"
+            ]
+        },
+        {
+            "id": 5,
+            "nom": "Schtroumpfs",
+            "photo": "https://images.openfoodfacts.org/images/products/310/322/004/5640/front_en.112.400.jpg",
+            "categorie": "Snacks, Sweet snacks, Confectioneries, Candies, Gummi candies",
+            "marque": "Haribo",
+            "mots_cles": [
+                "en:no-colorings"
+            ]
+        },
+        {
+            "id": 6,
+            "nom": "Mentos fruit",
+            "photo": "https://images.openfoodfacts.org/images/products/000/008/710/8026/front_en.115.400.jpg",
+            "categorie": "Lanches comida,Lanches doces,Confeitaria,Rebuçados e gomas,en:Dragées",
+            "marque": "Mentos,Perfetti",
+            "mots_cles": [
+                "en:no-gluten",
+                "en:green-dot"
+            ]
+        },
+        {
+            "id": 7,
+            "nom": "Tagada, L'originale",
+            "photo": "https://images.openfoodfacts.org/images/products/310/322/003/3371/front_en.76.400.jpg",
+            "categorie": "Snacks, Sweet snacks, Confectioneries, Candies, Gummi candies",
+            "marque": "Haribo",
+            "mots_cles": []
+        },
+        {
+            "id": 8,
+            "nom": "Bubblizz Original",
+            "photo": "https://images.openfoodfacts.org/images/products/311/674/003/3875/front_en.80.400.jpg",
+            "categorie": "Snacks, Snacks sucrés, Confiseries, Bonbons, Bonbons gélifiés, Bonbons acidulés gélifiés",
+            "marque": "Lutti",
+            "mots_cles": [
+                "en:no-gluten",
+                "en:made-in-france"
+            ]
+        },
+        {
+            "id": 9,
+            "nom": "Schtroumpfs acidulés",
+            "photo": "https://images.openfoodfacts.org/images/products/310/322/003/5771/front_en.83.400.jpg",
+            "categorie": "Snacks, Sweet snacks, Confectioneries, Candies, Gummi candies",
+            "marque": "Haribo",
+            "mots_cles": [
+                "en:green-dot",
+                "en:no-colorings"
+            ]
+        },
+        {
+            "id": 10,
+            "nom": "Rotella",
+            "photo": "https://images.openfoodfacts.org/images/products/310/322/000/9635/front_en.59.400.jpg",
+            "categorie": "Plant-based foods and beverages, Plant-based foods, Snacks, Sweet snacks, Confectioneries, Pastas, Candies, it:Rotelle",
+            "marque": "Haribo",
+            "mots_cles": [
+                "en:green-dot",
+                "en:no-colorings",
+                "fr:pensez-au-tri"
+            ]
+        },
+        {
+            "id": 11,
+            "nom": "koala guimauve",
+            "photo": "https://images.openfoodfacts.org/images/products/311/674/003/3899/front_en.60.400.jpg",
+            "categorie": "Snacks, Sweet snacks, Cocoa and its products, Confectioneries, Chocolate candies, Bonbons, Candies",
+            "marque": "Lutti",
+            "mots_cles": [
+                "en:made-in-france"
+            ]
+        },
+        {
+            "id": 12,
+            "nom": "Kinder maxi",
+            "photo": "https://images.openfoodfacts.org/images/products/000/004/008/4701/front_en.170.400.jpg",
+            "categorie": "Chocolate confectionery with dairy filling",
+            "marque": "Kinder",
+            "mots_cles": [
+                "en:no-colorings"
+            ]
+        },
+        {
+            "id": 13,
+            "nom": "Kinder Cards",
+            "photo": "https://images.openfoodfacts.org/images/products/800/050/026/9169/front_fr.222.400.jpg",
+            "categorie": "Lanches comida,Lanches doces,Biscoitos e Bolos,Biscoitos,Biscoitos de chocolate,Bolachas,en:Stuffed wafers,en:Chocolate stuffed wafers",
+            "marque": "Kinder,Ferrero",
+            "mots_cles": [
+                "en:no-preservatives",
+                "en:green-dot",
+                "en:no-colorings",
+                "en:no-dyes-or-preservatives",
+                "fr:tidy-man"
+            ]
+        },
+        {
+            "id": 14,
+            "nom": "Kinder Bueno White",
+            "photo": "https://images.openfoodfacts.org/images/products/000/008/076/1761/front_en.284.400.jpg",
+            "categorie": "Snacks,Sweet snacks,Cocoa and its products,Confectioneries,Biscuits and cakes,Biscuits and crackers,Chocolate candies,Bars,Biscuits,Candy chocolate bars,Chocolate confectioneries filled with wafer",
+            "marque": "Kinder,Kinder bueno",
+            "mots_cles": [
+                "en:green-dot",
+                "fr:tidy-man",
+                "fr:triman"
+            ]
+        },
+        {
+            "id": 15,
+            "nom": "Kinder Délice",
+            "photo": "https://images.openfoodfacts.org/images/products/800/050/026/7035/front_es.169.400.jpg",
+            "categorie": "Lanches comida,Sobremesas,Lanches doces,Biscoitos e Bolos,Bolos,en:Chocolate soft cake",
+            "marque": "Kinder Délice,Kinder",
+            "mots_cles": [
+                "en:green-dot",
+                "fr:triman"
+            ]
+        },
+        {
+            "id": 16,
+            "nom": "Kinder Bueno",
+            "photo": "https://images.openfoodfacts.org/images/products/800/050/003/7560/front_en.192.400.jpg",
+            "categorie": "Snacks, Sweet snacks, Cocoa and its products, Confectioneries, Bars, Chocolate candies, Bars covered with chocolate, Chocolate biscuity bars, Chocolate nuts cookie bars",
+            "marque": "Kinder, Mixte",
+            "mots_cles": [
+                "en:green-dot",
+                "en:pure-cocoa-butter"
+            ]
+        },
+        {
+            "id": 17,
+            "nom": "Kinder Country",
+            "photo": "https://images.openfoodfacts.org/images/products/400/840/026/0921/front_en.139.400.jpg",
+            "categorie": "Snacks, Snacks sucrés, Cacao et dérivés, Confiseries, Barres, Confiseries chocolatées, Barres de céréales, Barres chocolatées, Barres chocolatées au lait et aux céréales",
+            "marque": "Kinder,Ferrero",
+            "mots_cles": [
+                "en:green-dot",
+                "en:pure-cocoa-butter",
+                "fr:triman"
+            ]
+        },
+        {
+            "id": 18,
+            "nom": "Schokobons",
+            "photo": "https://images.openfoodfacts.org/images/products/541/354/828/3128/front_en.106.400.jpg",
+            "categorie": "Snacks,Sweet snacks,Cocoa and its products,Confectioneries,Chocolate candies,Bonbons",
+            "marque": "Kinder",
+            "mots_cles": [
+                "en:no-gluten",
+                "en:green-dot",
+                "en:institut-fresenius",
+                "de:pp"
+            ]
+        },
+        {
+            "id": 19,
+            "nom": "Kinder JOY",
+            "photo": "https://images.openfoodfacts.org/images/products/000/008/031/0891/front_en.109.400.jpg",
+            "categorie": "Snacks, Sweet snacks, Cocoa and its products, Confectioneries, Festive foods, Chocolate candies, Chocolates, Chocolate molds, Easter food, Chocolate eggs, Easter eggs, Hollow chocolate eggs, Œufs en chocolat, en:bars",
+            "marque": "Ferrero, Kinder",
+            "mots_cles": [
+                "en:verified"
+            ]
+        },
+        {
+            "id": 20,
+            "nom": "Kinder Surprise",
+            "photo": "https://images.openfoodfacts.org/images/products/000/004/008/4107/front_de.132.400.jpg",
+            "categorie": "en:Hollow chocolate eggs",
+            "marque": "Kinder",
+            "mots_cles": [
+                "en:not-advised-for-specific-people",
+                "en:not-recommended-for-children-under-3-years",
+                "fr:tidy-man"
+            ]
+        },
+        {
+            "id": 21,
+            "nom": "Kinder DUO imp",
+            "photo": "https://images.openfoodfacts.org/images/products/800/050/038/5807/front_en.65.400.jpg",
+            "categorie": "Snacks, Snacks sucrés, Biscuits et gâteaux, Biscuits, en:Biscuits et gâteaux, en:Kekse mit Vollmilchschokolade und Weißer Schokolade, en:Snacks sucrés",
+            "marque": "Kinder",
+            "mots_cles": [
+                "en:green-dot",
+                "en:point-vert"
+            ]
+        }
+    ]
+}
