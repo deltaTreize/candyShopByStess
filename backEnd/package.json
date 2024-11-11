@@ -1,0 +1,22 @@
+{
+  "name": "candyshop-by-stess",
+  "version": "1.0.0",
+  "description": "E-commerce backend for CandyShop with Node.js, Express, MySQL, and Sequelize",
+  "main": "app.js",
+  "scripts": {
+    "start": "node app.js",
+    "dev": "nodemon app.js",
+    "sync": "node sync.js"
+  },
+  "dependencies": {
+    "dotenv": "^8.6.0",
+    "express": "^4.17.1",
+    "mysql2": "^2.3.3",
+    "sequelize": "^6.37.5"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.22"
+  },
+  "author": "Your Name",
+  "license": "MIT"
+}

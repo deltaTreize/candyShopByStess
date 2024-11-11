@@ -5,6 +5,7 @@
     "jsx": "react",
     "module": "commonjs",
     "strict": true,
+    "resolveJsonModule": true,
     "esModuleInterop": true
   }
 }

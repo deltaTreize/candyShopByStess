@@ -1,0 +1,28 @@
+.cones{
+  width: 100%;
+	display: flex;
+  align-items: center;
+  justify-content: center;
+  .cones-wrapper{
+    margin-bottom: 50px;
+    margin-top: 70px;
+    height: 90%;
+    width: 90%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    column-gap: 20px;
+    row-gap: 40px;
+    .cones-card{
+      width: 20%;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      img{
+        height: 100%;
+        width: 100%;
+      }
+    }
+  }
+}

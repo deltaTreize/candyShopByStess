@@ -1,0 +1,34 @@
+.simple-container {
+  border-right: 1px solid black;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  width: 50%;
+  .simple-wrapper {
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    width: 100%;
+    height: 100%;
+    .simple-20cm,
+    .simple-30cm,
+    .simple-40cm,
+    .simple-50cm,
+    .simple-60cm{
+      position: relative;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      p{
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -100%);
+        font-size: 20px;
+      }
+      &:hover {
+        cursor: pointer;
+      }
+    }
+  }
+}
