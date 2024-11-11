@@ -14,7 +14,7 @@ export function HomePage() {
 			<NavLink to="/goblets" className="homePage-link smoothies">
 				<p>Les Goblets</p>
 			</NavLink>
-			<NavLink to="/cornets" className="homePage-link cornets">
+			<NavLink to="/cones" className="homePage-link cones-homePage">
 				<p>Les Cornets</p>
 			</NavLink>
 			<NavLink to="/brochettes" className="homePage-link brochette">
