@@ -1,0 +1,68 @@
+.homePage {
+	height: 90vh;
+	width: 100%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-wrap: wrap;
+	column-gap: 10vw;
+	&-link {
+		text-decoration: none;
+		color: #000;
+		display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+		height: 300px;
+		width: 25%;
+		gap: 10px;
+		font-size: 20px;
+    cursor: pointer;
+    position: relative;
+    p{
+      margin: 0;
+      padding-top: 10px;
+      position: absolute;
+      bottom: -35px;
+      left: 50%;
+      transform: translateX(-50%);
+    }
+
+    &.gateau{
+      background-image: url("../../../public/assets/gateau-kinder-2.jpg");
+      background-size: contain;
+      background-repeat: no-repeat;
+      background-position: center;
+    }
+    &.boite{
+      background-image: url("../../../public/assets/boite-grande-homePage.png");
+      background-size: contain;
+      background-repeat: no-repeat;
+      background-position: center;
+    }
+    &.smoothies{
+      background-image: url("../../../public/assets/goblets-smoothies.png");
+      background-size: contain;
+      background-repeat: no-repeat;
+      background-position: center;
+    }
+    &.cones-homePage{
+      background-image: url("../../../public/assets/cones-bonbon.png");
+      background-size: contain;
+      background-repeat: no-repeat;
+      background-position: center;
+    }
+    &.brochette{
+      background-image: url("../../../public/assets/brochette-1.png");
+      background-size: contain;
+      background-repeat: no-repeat;
+      background-position: center;
+    }
+    &:hover {
+      color: #f850b3;
+      transform: scale(1.1);
+      font-weight: bold;
+      transition: transform 0.5s;
+
+    }
+	}
+}
