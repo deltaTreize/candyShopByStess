@@ -1,11 +1,3 @@
-<<<<<<< HEAD
-import React from "react";
-import "./App.scss";
-
-function App() {
-	return (
-	<></>
-=======
 import React, { StrictMode } from "react";
 import { BrowserRouter, Route, Routes } from "react-router-dom";
 import "./App.scss";
@@ -35,7 +27,6 @@ function App() {
 				<Footer />
 			</BrowserRouter>
 		</StrictMode>
->>>>>>> c0aee03adbad0dfb477f0bc315fbbc93e7c18573
 	);
 }
 
