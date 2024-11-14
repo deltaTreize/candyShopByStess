@@ -51,11 +51,6 @@ export function Header() {
 						<i className="fa-solid fa-magnifying-glass"></i>
 					</button>
 				</form>
-				<NavLink to={"/contact"} className="contact">
-					{" "}
-					Contactez-Nous <i className="fa-solid fa-envelope"></i>{" "}
-					<i className="fa-solid fa-envelope-open"></i>
-				</NavLink>
 			</div>
 		</div>
 	);

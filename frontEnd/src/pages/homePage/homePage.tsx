@@ -6,10 +6,10 @@ export function HomePage() {
 	return (
 		<div className="homePage">
 			<NavLink to="/gateaux" className="homePage-link gateau">
-				<p>Les Gateaux sur mesure</p>
+				<p>Les Gâteaux sur mesure</p>
 			</NavLink>
 			<NavLink to="/boites" className="homePage-link boite">
-				<p>Les Boites</p>
+				<p>Les Assortiments</p>
 			</NavLink>
 			<NavLink to="/goblets" className="homePage-link smoothies">
 				<p>Les Goblets</p>

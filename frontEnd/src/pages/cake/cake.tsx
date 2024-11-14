@@ -52,12 +52,32 @@ export function Cake() {
 			<NavLink to="/" className="homePage-link-back">
 				<i className="fa-solid fa-arrow-left"></i>Retour
 			</NavLink>
-			<h1 className="cake-title">PAGE EN COUR DE CONSTRUCTION!</h1>
-			<img
-				src="./assets/panneau-chantier.png"
-				alt="panneau travaux"
-				className="panneau"
-			/>
+			<div className="cake-wrapper">
+				<div className="cake-card">
+					<img
+						src="./assets/gateau-kinder-1.png"
+						alt="gateau kinder"
+					/>
+				</div>
+				<div className="cake-card">
+					<img
+						src="./assets/gateau-kinder-2.png"
+						alt="gateau kinder"
+					/>
+				</div>
+				<div className="cake-card">
+					<img
+						src="./assets/gateau-kinder-3.png"
+						alt="gateau kinder"
+					/>
+				</div>
+				<div className="cake-card">
+					<img
+						src="./assets/gateau-kinder-4.png"
+						alt="gateau kinder"
+					/>
+				</div>
+			</div>
 		</div>
 		// <div className="cake">
 		// 	<div className="cake-show">
