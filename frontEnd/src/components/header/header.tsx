@@ -16,7 +16,7 @@ export function Header() {
 				</NavLink>
 			</div>
 			<div className="navbar">
-				<Collapse
+				{/* <Collapse
 					title={"Par saisons"}
 					value={[
 						{ text: "14 Juillet", icon: <></> },
@@ -44,7 +44,7 @@ export function Header() {
 							icon: <i className="fa-solid fa-heart"></i>,
 						},
 					]}
-				/>
+				/> */}
 				<form className="search-form">
 					<input type="text" placeholder="Rechercher" className="search" />
 					<button type="submit" className="search-button">

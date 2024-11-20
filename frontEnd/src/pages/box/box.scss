@@ -9,6 +9,12 @@
 	color: black;
 	font-weight: bold;
 	font-size: 22px;
+	@media screen and (max-width: 425px) {
+		font-size: 16px;
+		top: 50px;
+		left: 20px;
+	}
+
 	i{
 		height: 100%;
 		display: flex;
@@ -16,6 +22,9 @@
 		justify-content: center;
 		text-align: center;
 		font-size: 28px;
+		@media screen and (max-width: 425px) {
+			font-size: 16px;
+		}
 	}
 }
 .box {
@@ -24,6 +33,11 @@
 	display: flex;
 	align-items: center;
 	justify-content: center;
+	@media screen and (max-width: 425px) {
+		min-height: 85vh;
+		align-items: normal;
+	}
+
 	.box-wrapper {
 		margin-bottom: 50px;
 		margin-top: 70px;

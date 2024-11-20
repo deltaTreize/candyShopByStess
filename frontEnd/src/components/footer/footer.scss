@@ -5,8 +5,15 @@
 	display: flex;
 	align-items: center;
 	justify-content: center;
+	@media screen and (max-width: 768px) {
+		height: 10vh;
+	}
+
 	nav {
-		width: 70%;
+		width: 80%;
+		@media screen and (max-width: 768px) {
+			width: 100%;
+		}
 		ul {
 			margin: 0;
 			padding: 0;
@@ -14,12 +21,36 @@
 			flex-direction: row;
 			justify-content: space-between;
 			list-style: none;
+			width: 98%;
+			@media screen and (max-width: 768px) {
+				flex-wrap: wrap;
+				row-gap: 10px;
+			}
+
 			li {
 				cursor: pointer;
-				p{
+				@media screen and (max-width: 649px) {
+					width: 50%;
+				}
+				@media screen and (min-width: 650px) and (max-width: 768px) {
+					width: 33%;
+				}
+				@media screen and (min-width: 769px) {
+					width: auto;
+				}
+				p {
 					margin: 0;
 					padding: 0;
 					cursor: default;
+					@media screen and (max-width: 768px) {
+						font-size: 10px;
+					}
+					@media screen and (min-width: 769px) {
+						font-size: 1.1vw;
+					}
+					@media screen and (min-width: 650px) and (max-width: 768px) {
+						font-size: 12px;
+					}
 				}
 				a {
 					display: flex;
@@ -27,19 +58,28 @@
 					justify-content: center;
 					gap: 5px;
 					text-decoration: none;
+					@media screen and (max-width: 649px) {
+						font-size: 10px;
+					}
+					@media screen and (min-width: 769px) {
+						font-size: 1.1vw;
+					}
+					@media screen and (min-width: 650px) and (max-width: 768px) {
+						font-size: 12px;
+					}
 				}
 				.footer-link-facebook {
 					color: #1878f1;
 				}
-        .footer-link-mail {
-          color: #71afe5;
-        }
-        .footer-link-phone {
-          color: #fff;
-        }
-        .footer-link-location {
-          color: #1ea362;
-        }
+				.footer-link-mail {
+					color: #71afe5;
+				}
+				.footer-link-phone {
+					color: #fff;
+				}
+				.footer-link-location {
+					color: #1ea362;
+				}
 				.footer-link-insta {
 					color: #dd2a7b;
 					img {
