@@ -65,9 +65,6 @@ export function Cones() {
 					<img src="./assets/cones-logo-2.png" alt="cone de bonbons" />
 				</div>
 				<div className="cones-card">
-					<img src="./assets/cones-logo-4.png" alt="cone de bonbons" />
-				</div>
-				<div className="cones-card">
 					<img src="./assets/cones-malteser.png" alt="cone de bonbons" />
 				</div>
 				<div className="cones-card">
