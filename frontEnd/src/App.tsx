@@ -9,6 +9,7 @@ import { Cake } from "./pages/cake/cake";
 import { Cones } from "./pages/cones/cones";
 import { Goblets } from "./pages/goblets/goblets";
 import { Brochettes } from "./pages/brochettes/brochettes";
+import { SignIn } from "./pages/signIn/signIn";
 
 
 function App() {
@@ -23,6 +24,8 @@ function App() {
 					<Route path="/cones" element={<Cones/>} />
 					<Route path="/goblets" element={<Goblets/>} />
 					<Route path="/brochettes" element={<Brochettes/>} />
+					<Route path="/signIn" element={<SignIn/>} />
+
 				</Routes>
 				<Footer />
 			</BrowserRouter>
