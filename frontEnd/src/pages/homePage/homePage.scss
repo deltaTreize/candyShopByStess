@@ -14,6 +14,9 @@
   @media screen and (min-width: 1024px) {
     row-gap: 10vh;
   }
+  h1{
+    display: none;
+  }
   div{
     color: #000;
 		display: flex;
@@ -34,7 +37,7 @@
     @media screen and (min-width: 769px) and (max-width: 1024px) {
       height: 20vh;
     }
-    h1,h2,h3{
+    h2,h3{
       height: 10%;
       margin: 0;
       padding-top: 10px;

@@ -5,10 +5,11 @@ import "./homePage.scss";
 export function HomePage() {
 	return (
 		<div className="homePage">
+			<h1>candyshop by stess</h1>
 			<div>
 			<NavLink to="/gateaux" className="homePage-link gateau" aria-label="go to cake">
 			</NavLink>
-				<h1>Les Gâteaux Kinder</h1>
+				<h2>Les Gâteaux Kinder</h2>
 			</div>
 			<div>
 			<NavLink to="/boites" className="homePage-link boite" aria-label="go to box">
