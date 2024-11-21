@@ -8,7 +8,7 @@ export function Goblets() {
 		<div className="goblets">
 			<NavLink to="/" className="homePage-link-back">
 				<i className="fa-solid fa-arrow-left"></i>
-				<h1>Retour</h1>
+				Retour
 			</NavLink>
 			<div className="goblets-wrapper">
 				<div className="goblets-card">

@@ -61,7 +61,7 @@ export function Footer() {
 
 					</li>
 					<li>
-						<h1>SIRET: 934 990 615 00015</h1>
+						<p>SIRET: 934 990 615 00015</p>
 					</li>
 				</ul>
 			</nav>

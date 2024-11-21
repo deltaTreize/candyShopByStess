@@ -5,7 +5,6 @@ import "./homePage.scss";
 export function HomePage() {
 	return (
 		<div className="homePage">
-			<h1>candyshop by stess</h1>
 			<div>
 			<NavLink to="/gateaux" className="homePage-link gateau" aria-label="go to cake">
 			</NavLink>

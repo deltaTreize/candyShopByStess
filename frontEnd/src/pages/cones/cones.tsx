@@ -8,7 +8,7 @@ export function Cones() {
 		<div className="cones">
 			<NavLink to="/" className="homePage-link-back">
 				<i className="fa-solid fa-arrow-left"></i>
-				<h1>Retour</h1>
+				Retour
 			</NavLink>
 			<div className="cones-wrapper">
 				<div className="cones-card">
