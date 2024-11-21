@@ -1,13 +1,14 @@
 import React from "react";
 import { NavLink } from "react-router-dom";
-import { Collapse } from "../collapse/collapse";
+// import { Collapse } from "../collapse/collapse";
 import "./header.scss";
 
 export function Header() {
 	return (
 		<div className="header">
 			<div className="main-logo">
-				<NavLink className="main-logo-link" to={"/"}>
+				<NavLink className="main-logo-link" aria-label="go to home" to={"/"}>
+					<h1>candyShopByStess</h1>
 					<img
 						className="main-logo-img"
 						src="./assets/icon.png"
@@ -45,9 +46,18 @@ export function Header() {
 						},
 					]}
 				/> */}
-				<form className="search-form">
-					<input type="text" placeholder="Rechercher" className="search" />
-					<button type="submit" className="search-button">
+				<form className="search-form" action="">
+					<label htmlFor="search-input" className="visually-hidden">
+						Rechercher
+					</label>
+					<input
+						type="text"
+						id="search-input"
+						name="search-query"
+						placeholder="Rechercher"
+						className="search"
+					/>
+					<button type="submit" className="search-button" aria-label="search">
 						<i className="fa-solid fa-magnifying-glass"></i>
 					</button>
 				</form>

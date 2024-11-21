@@ -33,8 +33,9 @@ export function Cake() {
 		return (
 			<div className="cake">
 				<NavLink to="/" className="homePage-link-back">
-					<i className="fa-solid fa-arrow-left"></i>Retour
-				</NavLink>
+					<i className="fa-solid fa-arrow-left"></i>
+					<h1>Retour</h1>
+					</NavLink>
 				<div className="cake-wrapper">
 					<div className="cake-card">
 						<img src="./assets/gateau-kinder-1.png" alt="gateau kinder" />

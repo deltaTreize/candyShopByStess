@@ -6,29 +6,29 @@ export function HomePage() {
 	return (
 		<div className="homePage">
 			<div>
-			<NavLink to="/gateaux" className="homePage-link gateau">
+			<NavLink to="/gateaux" className="homePage-link gateau" aria-label="go to cake">
 			</NavLink>
-				<p>Les Gâteaux Kinder</p>
+				<h1>Les Gâteaux Kinder</h1>
 			</div>
 			<div>
-			<NavLink to="/boites" className="homePage-link boite">
+			<NavLink to="/boites" className="homePage-link boite" aria-label="go to box">
 			</NavLink>
-				<p>Les Assortiments</p>
+				<h2>Les Assortiments</h2>
 			</div>
 			<div>
-			<NavLink to="/goblets" className="homePage-link smoothies">
+			<NavLink to="/goblets" className="homePage-link smoothies" aria-label="go to goblets">
 			</NavLink>
-				<p>Les Goblets</p>
+				<h2>Les Goblets</h2>
 			</div>
 			<div>
-			<NavLink to="/cones" className="homePage-link cones-homePage">
+			<NavLink to="/cones" className="homePage-link cones-homePage" aria-label="go to cones">
 			</NavLink>
-				<p>Les Cornets</p>
+				<h3>Les Cornets</h3>
 			</div>
 			<div>
-			<NavLink to="/brochettes" className="homePage-link brochette">
+			<NavLink to="/brochettes" className="homePage-link brochette" aria-label="go to brochettes">
 			</NavLink>
-				<p>Les Brochettes</p>
+				<h3>Les Brochettes</h3>
 			</div>
 		</div>
 	);
