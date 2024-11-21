@@ -23,7 +23,6 @@ function App() {
 					<Route path="/cones" element={<Cones/>} />
 					<Route path="/goblets" element={<Goblets/>} />
 					<Route path="/brochettes" element={<Brochettes/>} />
-
 				</Routes>
 				<Footer />
 			</BrowserRouter>

@@ -7,7 +7,8 @@ export function Box() {
 	return (
 		<div className="box">
 			<NavLink to="/" className="homePage-link-back">
-				<i className="fa-solid fa-arrow-left"></i>Retour
+				<i className="fa-solid fa-arrow-left"></i>
+				<h1>Retour</h1>
 			</NavLink>
 			<div className="box-wrapper">
 				<div className="box-card">
