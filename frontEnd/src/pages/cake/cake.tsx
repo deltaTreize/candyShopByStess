@@ -1,61 +1,137 @@
-import React from "react";
-import "./cake.scss";
+import React, { useEffect, useState } from "react";
+import { Helmet } from "react-helmet";
 import { NavLink } from "react-router-dom";
+import "./cake.scss";
 
-// import axios from "axios";
-
+interface Product {
+	id: number;
+	name: string;
+	description: string;
+	price: number;
+	image_path: string;
+	tags: string[];
+}
 
 export function Cake() {
-	// type Product = {
-	// 	id: number;
-	// 	name: string;
-	// 	price: number;
-	// 	image_path: string;
-	// 	tags: string;
-	// };
-	// 	const [products, setProducts] = useState<Product[]>([]);
-	
-	// 	useEffect(() => {
-	// 		const fetchProducts = async () => {
-	// 			try {
-	// 				const response = await axios.get(
-	// 					"http://localhost:3001/api/products"
-	// 				);
-	// 				setProducts(response.data);
-	// 			} catch (error) {
-	// 				console.error("Error fetching products:", error);
-	// 			}
-	// 		};
-	
-	// 		fetchProducts();
-	// 	}, []);
+	const [products, setProducts] = useState<Product[]>([]);
+	const [imageOrientations, setImageOrientations] = useState<
+		Map<number, string>
+	>(new Map());
 
-		return (
+	useEffect(() => {
+		// Appel à l'API pour récupérer les produits de la catégorie "cake"
+		fetch(`${process.env.REACT_APP_API_URL}/api/products/cake`)
+			.then((response) => response.json())
+			.then((data) => setProducts(data));
+	}, []);
+	// Fonction pour vérifier l'orientation de l'image
+	useEffect(() => {
+		const orientations = new Map<number, string>();
+
+		products.forEach((product) => {
+			const img = new Image();
+			img.onload = () => {
+				const orientation = img.height > img.width ? "portrait" : "landscape";
+				orientations.set(product.id, orientation);
+
+				// Une fois que toutes les images ont été chargées, on met à jour l'état
+				if (orientations.size === products.length) {
+					setImageOrientations(new Map(orientations)); // Mettre à jour tout en une seule fois
+				}
+			};
+			img.src = `${process.env.REACT_APP_API_URL}/${product.image_path}`;
+		});
+	}, [products]);
+
+	if (products.length === 0) {
+		return <div>Loading...</div>;
+	}
+
+	// Remplir les données structurées pour la liste de produits
+	const structuredData = {
+		"@context": "http://schema.org",
+		"@type": "ItemList",
+		name: "Cake", // Nom de la catégorie
+		description:
+			"Découvrez notre gamme de gateaux garnis de Kinder.",
+		url: "https://candyshop-by-stess.fr/gateaux", // L'URL de la page catégorie
+		itemListElement: products.map((product, index) => ({
+			"@type": "ListItem",
+			position: index + 1, // Position du produit dans la liste
+			item: {
+				"@type": "Product",
+				name: product.name,
+				description: product.description,
+				image: product.image_path,
+				url: `https://candyshop-by-stess.fr/gateaux/${product.id}`, // Lien vers la page produit
+				offers: {
+					"@type": "Offer",
+					priceCurrency: "EUR",
+					price: product.price,
+				},
+				keywords: Array.isArray(product.tags) ? product.tags.join(", ") : "",
+			},
+		})),
+	};
+
+	return (
+		<>
+			<Helmet>
+				<title>Nos Gateaux - CandyShop By Stess</title>
+				<meta
+					name="description"
+					content="Découvrez notre gamme de Gateaux chez CandyShop By Stess."
+				/>
+				{/* JSON-LD pour les moteurs de recherche */}
+				<script type="application/ld+json">
+					{JSON.stringify(structuredData)}
+				</script>
+			</Helmet>
+
 			<div className="cake">
+				<h1>CandyShop By Stess: Gateaux garnis de bonbons ou de Kinder</h1>
 				<NavLink to="/" className="homePage-link-back">
 					<i className="fa-solid fa-arrow-left"></i>
 					Retour
-					</NavLink>
+				</NavLink>
 				<div className="cake-wrapper">
-					<div className="cake-card">
-						<img src="./assets/gateau-kinder-1.png" alt="gateau kinder" />
-					</div>
-					<div className="cake-card">
-						<img src="./assets/gateau-kinder-2.png" alt="gateau kinder" />
-					</div>
-					<div className="cake-card">
-						<img src="./assets/gateau-kinder-3.png" alt="gateau kinder" />
-					</div>
-					<div className="cake-card">
-						<img src="./assets/gateau-kinder-4.png" alt="gateau kinder" />
-					</div>
-					{/* <div className="cake-card">
-					{products.map(product => (
-						<img src={product.image_path} alt={product.name} />
-					))}
-					</div> */}
+					{products
+						// Trier les produits en fonction de l'orientation
+						.sort((a, b) => {
+							const orientationA = imageOrientations.get(a.id);
+							const orientationB = imageOrientations.get(b.id);
+
+							// Place "portrait" avant "landscape"
+							if (orientationA === "portrait" && orientationB !== "portrait") {
+								return 1;
+							}
+							if (orientationA !== "portrait" && orientationB === "portrait") {
+								return -1;
+							}
+							return 0; // Si les deux ont la même orientation, ne rien changer
+						})
+						.map((product) => {
+							const orientation = imageOrientations.get(product.id); // Récupérer l'orientation de l'image
+							return (
+								<div
+									key={product.id}
+									className={`cake-card ${
+										orientation === "portrait" ? "vertical" : "horizontal"
+									}`}
+								>
+									<NavLink to={`/gateaux/${product.id}`}>
+										<h2>{product.name}</h2>
+										<img
+											src={`${process.env.REACT_APP_API_URL}/${product.image_path}`}
+											alt={`cake ${product.name}`}
+											className="gateaux-image"
+										/>
+									</NavLink>
+								</div>
+							);
+						})}
 				</div>
 			</div>
-		);
-	};
-
+		</>
+	);
+}

@@ -1,4 +1,4 @@
-.homePage-link-back{
+.homePage-link-back {
 	position: absolute;
 	top: 70px;
 	left: 50px;
@@ -8,16 +8,12 @@
 	text-decoration: none;
 	color: black;
 	font-weight: bold;
-	h1{
-		font-size: 22px;
-	}
 	@media screen and (max-width: 425px) {
 		font-size: 16px;
 		top: 50px;
 		left: 20px;
 	}
-
-	i{
+	i {
 		height: 100%;
 		display: flex;
 		align-items: center;
@@ -39,7 +35,9 @@
 		min-height: 85vh;
 		align-items: normal;
 	}
-
+	h1 {
+		display: none;
+	}
 	.box-wrapper {
 		margin-bottom: 50px;
 		margin-top: 70px;
@@ -56,12 +54,49 @@
 			flex-direction: column;
 			align-items: center;
 			justify-content: center;
-      &.vertical{
-        width: 20%;
-      }
-			img {
+			box-shadow: 0 0 5px black;
+			padding: 0 2px 2px 2px;
+			box-sizing: border-box;
+			@media screen and (max-width: 768px) {
+				height: 40vh;
+			}
+			@media screen and (max-width: 425px) {
+				height: 30vh;
+				width: 100%;
+			}
+			&:hover, &:focus {
+				box-shadow: inset 0 0 10px black;
+			}
+			a{
 				height: 100%;
-        max-width: 100%;
+				display: flex;
+				flex-direction: column;
+				align-items: center;
+				justify-content: space-around;
+				h2{
+					font-size: 100%;
+					height: 10%;
+					text-align: center;
+					@media screen and (max-width: 768px) {
+						font-size: 80%;
+					}
+					@media screen and (max-width: 425px) {
+						font-size: 80%;
+					}
+				}
+				width: 100%;
+				text-decoration: none;
+				color: black;
+				img {
+					height: 80%;
+					max-width: 100%;
+					@media screen and (max-width: 768px) {
+						height: 60%;
+					}
+					@media screen and (max-width: 425px) {
+						height: 80%;
+					}
+				}
 			}
 		}
 	}

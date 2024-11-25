@@ -1,6 +1,7 @@
 import React from "react";
 import { NavLink } from "react-router-dom";
 // import { Collapse } from "../collapse/collapse";
+import logo from "../../assets/icon.png";
 import "./header.scss";
 
 export function Header() {
@@ -8,10 +9,9 @@ export function Header() {
 		<div className="header">
 			<div className="main-logo">
 				<NavLink className="main-logo-link" aria-label="go to home" to={"/"}>
-					<h1>candyShopByStess</h1>
 					<img
 						className="main-logo-img"
-						src="./assets/icon.png"
+						src={logo}
 						alt="candyShopByStess Logo"
 					/>
 				</NavLink>

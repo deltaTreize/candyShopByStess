@@ -7,6 +7,9 @@
   @media screen and (max-width: 425px) {
 		min-height: 85vh;
 	}
+  h1{
+    display: none;
+  }
   .cones-wrapper{
     margin-bottom: 50px;
     margin-top: 70px;
@@ -18,15 +21,43 @@
     column-gap: 20px;
     row-gap: 40px;
     .cones-card{
-      width: 20%;
+      box-shadow: 0 0 5px black;
+      width: 19%;
       display: flex;
       flex-direction: column;
       align-items: center;
       justify-content: center;
-      img{
-        height: 100%;
-        width: 100%;
-      }
+      padding: 0 2px 2px 2px;
+			box-sizing: border-box;
+      &:hover, &:focus {
+				box-shadow: inset 0 0 10px black;
+			}
+			a{
+				height: 100%;
+				display: flex;
+				flex-direction: column;
+				align-items: center;
+				justify-content: space-around;
+				h2{
+          margin-bottom: 30px;
+					font-size: 100%;
+					height: 10%;
+					text-align: center;
+					@media screen and (max-width: 768px) {
+						font-size: 65%;
+					}
+					@media screen and (max-width: 425px) {
+						font-size: 50%;
+					}
+				}
+				width: 100%;
+				text-decoration: none;
+				color: black;
+				img {
+					height: 65%;
+					max-width: 100%;
+				}
+			}
     }
   }
 }
